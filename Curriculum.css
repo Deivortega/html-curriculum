@@ -1,0 +1,268 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f4f1ec;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.cv-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+}
+
+/* HEADER */
+.cv-header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 48px 48px 36px 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.cv-header-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.cv-header-text .tagline {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #aaa;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.cv-header-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 3px solid #444;
+  flex-shrink: 0;
+}
+
+.cv-header-photo-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 4px;
+  background: #333;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 0.7rem;
+  text-align: center;
+  border: 3px solid #444;
+}
+
+/* BODY */
+.cv-body {
+  display: flex;
+  gap: 0;
+}
+
+/* LEFT COLUMN */
+.col-left {
+  flex: 2;
+  padding: 40px 40px 40px 48px;
+  border-right: 1px solid #e8e4de;
+}
+
+/* RIGHT COLUMN */
+.col-right {
+  flex: 1;
+  padding: 40px 40px 40px 36px;
+  background: #faf8f5;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 36px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e8e4de;
+}
+
+/* ENTRIES */
+.entry { margin-bottom: 20px; }
+
+.entry-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.entry-org {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.entry-date {
+  font-size: 0.78rem;
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.entry ul { list-style: none; padding: 0; }
+
+.entry ul li {
+  font-size: 0.87rem;
+  color: #444;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.entry ul li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #bbb;
+}
+
+/* RESUMEN */
+.resumen-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #444;
+  font-weight: 300;
+}
+
+/* CONTACTO */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 0.9rem;
+  margin-top: 1px;
+  color: #888;
+}
+
+/* APTITUDES */
+.skill-tag {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 400;
+  padding: 4px 10px;
+  border-radius: 2px;
+  margin: 3px 3px 3px 0;
+  letter-spacing: 0.5px;
+}
+
+/* IDIOMAS */
+.lang-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.87rem;
+  margin-bottom: 8px;
+}
+
+.lang-name { font-weight: 500; color: #1a1a1a; }
+
+.lang-level {
+  font-size: 0.75rem;
+  color: #888;
+  font-weight: 300;
+}
+
+.lang-bar-wrap {
+  width: 100%;
+  height: 3px;
+  background: #e8e4de;
+  border-radius: 2px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.lang-bar {
+  height: 3px;
+  background: #1a1a1a;
+  border-radius: 2px;
+}
+
+/* DIPLOMAS */
+.diploma-item {
+  font-size: 0.85rem;
+  color: #444;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.diploma-item::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #bbb;
+}
+
+/* ADICIONAL */
+.adicional-item {
+  font-size: 0.85rem;
+  color: #444;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.adicional-item::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #bbb;
+  font-size: 1.1rem;
+}
+.lang-btn {
+  display: inline-block;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  border-radius: 2px;
+  margin-top: 16px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-btn:hover {
+  background: #fff;
+  color: #1a1a1a;
+}
